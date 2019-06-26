@@ -10,7 +10,7 @@ import numpy as np
 import os.path
 
 # Initialize the parameters
-confThreshold = 0.5  #Confidence threshold
+confThreshold = 0.1  #Confidence threshold
 nmsThreshold = 0.4  #Non-maximum suppression threshold
 
 inpWidth = 416  #608     #Width of network's input image
@@ -31,7 +31,7 @@ with open(classesFile, 'rt') as f:
 # Give the configuration and weight files for the model and load the network using them.
 
 modelConfiguration = "/Users/tkelm/Documents/GitHub/learnopencv/YOLOv3-Training-Snowman-Detector/darknet-yolov3.cfg";
-modelWeights = "/Users/tkelm/Documents/GitHub/learnopencv/YOLOv3-Training-Snowman-Detector/darknet-yolov3_final.weights";
+modelWeights = "/Users/tkelm/Documents/GitHub/learnopencv/YOLOv3-Training-Snowman-Detector/weights/darknet-yolov3_800.weights";
 
 net = cv.dnn.readNetFromDarknet(modelConfiguration, modelWeights)
 net.setPreferableBackend(cv.dnn.DNN_BACKEND_OPENCV)
@@ -48,6 +48,8 @@ def getOutputsNames(net):
 def drawPred(classId, conf, left, top, right, bottom):
     # Draw a bounding box.
     #    cv.rectangle(frame, (left, top), (right, bottom), (255, 178, 50), 3)
+    print(classId)
+
     cv.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 3)
 
     label = '%.2f' % conf
