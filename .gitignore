@@ -3,3 +3,8 @@
 *.txt
 *.csv
 *.logs
+*.zip
+*.weights
+*.backup
+*.png
+YOLOv3-Training-Snowman-Detector/weights.tar.gz
