@@ -30,8 +30,8 @@ with open(classesFile, 'rt') as f:
 
 # Give the configuration and weight files for the model and load the network using them.
 
-modelConfiguration = "/Users/tkelm/Documents/GitHub/learnopencv/YOLOv3-Training-Snowman-Detector/darknet-yolov3.cfg";
-modelWeights = "/Users/tkelm/Documents/GitHub/learnopencv/YOLOv3-Training-Snowman-Detector/weights/darknet-yolov3_800.weights";
+modelConfiguration = "/home/ubuntu/finishlinecode/learnopencv/YOLOv3-Training-Snowman-Detector/darknet-yolov3.cfg";
+modelWeights = "/home/ubuntu/finishlinecode/learnopencv/YOLOv3-Training-Snowman-Detector/weights/darknet-yolov3_2200.weights";
 
 net = cv.dnn.readNetFromDarknet(modelConfiguration, modelWeights)
 net.setPreferableBackend(cv.dnn.DNN_BACKEND_OPENCV)

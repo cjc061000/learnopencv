@@ -1,5 +1,5 @@
 classes = 1
-train  = /Users/tkelm/Documents/GitHub/learnopencv/YOLOv3-Training-Snowman-Detector/shoe_train.txt
-valid  = /Users/tkelm/Documents/GitHub/learnopencv/YOLOv3-Training-Snowman-Detector/shoe_test.txt
-names = /Users/tkelm/Documents/GitHub/learnopencv/YOLOv3-Training-Snowman-Detector/classes.names
-backup = /Users/tkelm/Documents/GitHub/learnopencv/YOLOv3-Training-Snowman-Detector/weights/
+train  = /home/ubuntu/finishlinecode/learnopencv/YOLOv3-Training-Snowman-Detector/shoe_train.txt
+valid  = /home/ubuntu/finishlinecode/learnopencv/YOLOv3-Training-Snowman-Detector/shoe_test.txt
+names = /home/ubuntu/finishlinecode/learnopencv/YOLOv3-Training-Snowman-Detector/classes.names
+backup = /home/ubuntu/finishlinecode/learnopencv/YOLOv3-Training-Snowman-Detector/weights/

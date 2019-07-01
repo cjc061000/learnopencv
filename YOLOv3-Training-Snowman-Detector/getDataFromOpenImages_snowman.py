@@ -29,7 +29,7 @@ for ind in range(0, len(classes)):
     print("Total number of annotations : "+str(totalNumOfAnnotations))
 
     cnt = 0
-    for line in class_annotations[0:totalNumOfAnnotations]:
+    for line in class_annotations[0:min(totalNumOfAnnotations,1000)]:
         cnt = cnt + 1
         print("annotation count : " + str(cnt))
         lineParts = line.split(',')
